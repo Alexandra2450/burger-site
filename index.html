@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+    <script
+        src="https://code.jquery.com/jquery-4.0.0.js"
+        integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U="
+        crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="fonmain">
+        <div class="header__container">
+            <div class="header__container-context">
+                <img src="/img/logo.png" class="header__container-context-logo">
+                <div class="header__container-context-info">
+                    <img class="header__container-context-burg-left" src="/img/pic.svg">
+                    <div class="header__container-context-text">
+                        <div class="header__container-context-text-simple">
+                            Только самые
+                        </div>
+                        <div class="header__container-context-text-red">
+                            сочные бургеры!
+                        </div>
+                        <div class="header__container-context-text-simple-delivery">
+                            Бесплатная доставка от 599₽
+                        </div>
+                    </div>
+                </div>
+            <img class="header__container-context-burg" src="/img/pic.svg">
+        </div>
+        </div>
+    </div>
+
+
+    <section>
+		<div class="border-lost-razd">
+
+			<div class="container">
+
+				<div class="navigation__container">
+					<div class="navigation__container-list">
+						<div class="navigation__container-list-item">
+							<div class="navigation-button navigation-button-burger navigation-button-active">Бургеры</div>
+						</div>
+						<div class="navigation__container-list-item">
+							<div class="navigation-button navigation-button-snack">Закуски</div>
+						</div>
+						<div class="navigation__container-list-item">
+							<div class="navigation-button navigation-button-hotdog">Хот-доги</div>
+						</div>
+						<div class="navigation__container-list-item">
+							<div class="navigation-button navigation-button-combo">Комбо</div>
+						</div>
+						<div class="navigation__container-list-item">
+							<div class="navigation-button navigation-button-shawerma">Шаурма</div>
+						</div>
+						<div class="navigation__container-list-item">
+							<div class="navigation-button navigation-button-pizza">Пицца</div>
+						</div>
+						<div class="navigation__container-list-item">
+							<div class="navigation-button navigation-button-wok">Вок</div>
+						</div>
+						<div class="navigation__container-list-item">
+							<div class="navigation-button navigation-button-desert">Десерты</div>
+						</div>
+						<div class="navigation__container-list-item">
+							<div class="navigation-button navigation-button-souse">Соусы</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+    </section>
+
+    <section>
+		<div class="container">
+			<div class="main__container">
+				<div class="main__container-korzina">
+					<div class="main__container-korzina-name">
+						<div class="main__container-korzina-name-text">
+							Корзина
+						</div>
+						<div class="main__container-korzina-name-count">
+						</div>
+
+					</div>
+					<div class="kontent__korz">
+
+					</div>
+					
+				</div>
+				<div class="main__container-food">
+					<div class="main__container-foodname">
+					</div>
+					<div class="main__container-list-prod">
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+    <section>
+        <div class="main__page-container-background">
+            <div class="main__page-container-popup">
+                <div class="main__page-container-popup-left">
+                    <img class="main__page-container-popup-image" src="/img/pic_1440.png">
+                </div>
+                <div class="main__page-container-popup-right">
+                    <div class="main__page-container-popup-right-context">
+                        <div class="mp-container-popup-right-context-delivery-top">
+                            <div class="delivery__name">
+                                Доставка
+                            </div>
+                            <div class="button__close">
+                                <img class="button__close-img" src="img/close.png">
+                            </div>
+                        </div>
+                        <div class="mp-container-popup-right-context-delivery-body">
+                            <input class="delivery__textinput" type="text" placeholder="Ваше имя" name="name">
+                            <input class="delivery__textinput" type="text" placeholder="Телефон" name="phone">
+                            <div class="delivery__radiogroup">
+                                <label class="delivery__radio">
+                                    <input type="radio" name="type" value="pickup">Самовывоз
+                                </label>
+                                <label class="delivery__radio">
+                                    <input type="radio" name="type" value="delivery" checked>Доставка
+                                </label>
+                            </div>
+                            <div class="delivery__addres-block delivery__address-show">
+                                <input class="delivery__textinput addres addres-flat" type="text" name="addres__street" placeholder="Улица, дом, квартира">
+                                <div class="delivery__textinput-addresblock">
+                                    <input class="delivery__textinput delivery__textinput-addres" type="text" name="addres__flat" placeholder="Этаж">
+                                    <input class="delivery__textinput delivery__textinput-addres" type="text" name="addres__domofon" placeholder="Домофон">
+                                </div>
+                                <div class="delivery__button-submit">
+                                    Оформить
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container__footer-background">
+            <div class="container-bot">
+                <div class="footer__container">
+                    <div class="footer__container-logo">
+                        <img src="/img/logo_footer_1440.png">
+                    </div>
+                    <div class="footer__container-socmedia">
+                        <div class="footer__container-socmedia-phone">
+                            <div class="footer__container-socmedia-phone-text">
+                                Номер для заказа
+                            </div>
+                            <div class="footer__container-socmedia-phone-block">
+                                <img src="/img/footer-phone_320.png" class="footer__container-socmedia-phone-icon">
+                                <div class="footer__container-socmedia-phone-numbers">
+                                    +7(930)833-38-11
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__container-socmedia-media">
+                            <div class="footer__container-socmedia-media-text">
+                                Мы в соцсетях
+                            </div>
+                            <div class="footer__container-socmedia-media-imgs">
+                                <img src="/img/footer-media-vk_320.png">
+                                <img src="/img/footer-media-telegram_320.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__container-info">
+                        © YouMeal, 2022<br>
+                        Design: Anastasia Ilina
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+<script>
+    let actualCategory = "Бургеры";
+
+    var products = [
+        {
+            name: "Бургеры",
+            products: [
+                {
+                    id: "001",
+                    price: "689₽",
+                    name: "Мясная бомба",
+                    weight: "520г",
+                    img: "/img/prod/burgers/burg1.png" 
+                },
+                {
+                    id: "002",
+                    price: "650₽",
+                    name: "Супер сырный",
+                    weight: "520г",
+                    img: "/img/prod/burgers/burg1.png" 
+                },
+                {
+                    id: "003",
+                    price: "750₽",
+                    name: "Вечная классика",
+                    weight: "520г",
+                    img: "/img/prod/burgers/burg1.png" 
+                },
+                {
+                    id: "004",
+                    price: "430₽",
+                    name: "Сытный",
+                    weight: "520г",
+                    img: "/img/prod/burgers/burg1.png" 
+                }
+            ]
+        },
+        {
+            name: "Закуски",
+            products: [
+                {
+                    id: "005",
+                    price: "689₽",
+                    name: "Закуска1",
+                    weight: "520г",
+                    img: "/img/prod/burgers/burg1.png" 
+                },
+                {
+                    id: "006",
+                    price: "650₽",
+                    name: "Закуска2",
+                    weight: "520г",
+                    img: "/img/prod/burgers/burg1.png" 
+                }
+            ]
+        }
+
+    ];
+
+    var korzina = [];
+
+
+    function render(actualCategory){
+        $(".main__container-foodname").html("");
+        $(".main__container-list-prod").html("");
+        let temp = products.find(el => {
+            return el.name === actualCategory;
+        });
+        console.log(temp);
+        $(".main__container-foodname").text(actualCategory);
+        temp.products.forEach((el) => {
+            $(".main__container-list-prod").append(`
+			<div class="product">
+                <img class="product-img" src="${el.img}">
+                <div class="product-price">${el.price}</div>
+				<div class="product-name">${el.name}</div>
+				<div class="product-weight">${el.weight}</div>
+                <div class="product-add_button" onclick='addInKorz("${el.id}")'>Добавить</div>
+			</div>
+		`);  
+        });
+    }
+
+    function renderKorz(){
+        let itogoSum = 0;
+        $(".kontent__korz").html("");
+        $(".main__container-korzina-name-count").html("");
+        $(".main__container-korzina-name-count").text(countOfProdInKorz());
+        if(korzina.length == 0){
+            $(".kontent__korz").append(`
+            	<div class="main__container-korzina-empty">
+                    Тут пока пусто :(
+                </div>
+            `);
+        }
+        else {
+            $(".kontent__korz").append(`
+                <div class="main__container-korzina-products">
+                </div>
+            `);
+            korzina.forEach(el => {
+                let tempProd;
+                products.forEach(category => {
+                    let product = category.products.find(p => {
+                        return p.id === el.id;
+                    });
+                    if(product) {
+                        console.log(product);
+                        tempProd = product;
+                        itogoSum += parseInt(tempProd.price) * el.col;
+                    }
+                });
+                
+                $(".main__container-korzina-products").append(`
+                    <div class="korzina-product">
+                        <div class="korzina-product-photo">
+                            <img src="${tempProd.img}" class="korzina-product-photo-img">
+                        </div>
+                        <div class="korzina-product-info">
+                            <div class="korzina-product-name">
+                                ${tempProd.name}
+                            </div>
+                            <div class="korzina-product-weight">
+                                ${tempProd.weight}
+                            </div>
+                            <div class="korzina-product-price">
+                                ${parseInt(tempProd.price) * el.col}₽
+                            </div>
+                        </div>
+                        <div class="korzina-product-count">
+                            <div class="korzina-product-count-min" onclick='deleteFromKorz("${el.id}")'>
+                                -
+                            </div>
+                            <div class="korzina-product-count-num">
+                                ${el.col}
+                            </div>
+                            <div class="korzina-product-count-plus" onclick='addInKorz("${el.id}")'>
+                                +
+                            </div>
+                        </div>
+                    </div>
+            `);
+            });
+            $(".kontent__korz").append(`
+            	<div class="main__container-korzina-itogo">
+                    <div class="main__container-korzina-itogo-text">
+                        Итого
+                    </div>
+                    <div class="main__container-korzina-itogo-sum">
+                        ${itogoSum}₽
+                    </div>
+                </div>
+            `);
+            $(".kontent__korz").append(`
+            	<div class="main__container-korzina-submit-button">
+                    Оформить заказ
+                </div>
+            `);
+            if(parseInt(itogoSum) >= 550){
+                $(".kontent__korz").append(`
+            	<div class="main__container-korzina-free-delivery">
+                    <div class="main__container-korzina-free-delivery-img">
+                        <img class="main__container-korzina-free-delivery-image" src="/img/free-delivery.png">
+                    </div>
+                    <div class="main__container-korzina-free-delivery-text">
+                        Бесплатная доставка
+                    </div>
+                    
+                </div>
+            `);
+            }
+        }
+    }
+
+
+
+    function addInKorz(id) {
+        console.log(id);
+        var inKorz = false;
+        korzina.forEach((el) =>{
+            if(el.id == id) {
+                inKorz = true;
+                el.col += 1;
+            }
+        });
+        if(inKorz == false){
+            korzina.push({"id": id, "col": 1});
+        }
+        renderKorz();
+    }
+
+    function deleteFromKorz(id) {
+        const index = korzina.findIndex(el => el.id === id);
+        korzina.forEach((el) =>{
+            if((el.id == id) && (el.col > 1)) {
+                el.col -= 1;
+            } else if (el.col == 1){
+                korzina.splice(index, 1);
+            }
+        });
+        renderKorz();
+    }
+
+    function countOfProdInKorz() {
+        let countOfProd = 0;
+        korzina.forEach(el => {
+            countOfProd += el.col;
+        });
+        return countOfProd;
+    }
+
+    render(actualCategory);
+    renderKorz();
+
+
+
+
+
+    
+
+    
+
+
+
+
+    $(".navigation-button").on( "click", function() {
+        $(".navigation-button").removeClass("navigation-button-active");
+        $(this).addClass("navigation-button-active");
+        actualCategory = $(this).text();
+        render(actualCategory);
+    } );
+
+
+
+
+
+    $(document).on("click", ".main__container-korzina-submit-button", function() {
+        $(".main__page-container-background").addClass("main__page-container-background-show");
+    });
+
+    $( ".button__close" ).on( "click", function() {
+        $(".main__page-container-background").removeClass("main__page-container-background-show")
+    } );
+
+    $('input[name="type"]').on('change', function() {
+        if ($(this).val() === 'delivery') {
+            $('.delivery__addres-block').addClass('delivery__address-show');
+        } else if (($(this).val() === 'pickup')){
+            $('.delivery__addres-block').removeClass('delivery__address-show');
+        }
+    });
+
+    $(".main__container-korzina-name").on( "click", function() {
+        if($(".kontent__korz").hasClass("kontent__korz_show")){
+            $(".kontent__korz").removeClass("kontent__korz_show");
+        } else {
+            $(".kontent__korz").addClass("kontent__korz_show");
+        }
+        
+    } );
+
+
+
+    
+
+    
+</script>
+
+    
+</body>
+</html>

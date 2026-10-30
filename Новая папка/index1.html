@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+    <script
+        src="https://code.jquery.com/jquery-4.0.0.js"
+        integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U="
+        crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="fonmain">
+        <div class="header__container">
+            <div class="header__container-context">
+                <img src="/img/logo.png" class="header__container-context-logo">
+                <div class="header__container-context-info">
+                    <img class="header__container-context-burg-left" src="/img/pic.svg">
+                    <div class="header__container-context-text">
+                        <div class="header__container-context-text-simple">
+                            Только самые
+                        </div>
+                        <div class="header__container-context-text-red">
+                            сочные бургеры!
+                        </div>
+                        <div class="header__container-context-text-simple-delivery">
+                            Бесплатная доставка от 599₽
+                        </div>
+                </div>
+                </div>
+            <img class="header__container-context-burg" src="/img/pic.svg">
+        </div>
+    </div>
+    </div>
+    <div class="main__page-container">
+        <div class="main__page-container-button-order">
+            Оформить заказ
+        </div>
+
+
+        <div class="main__page-container-background">
+            <div class="main__page-container-popup">
+                <div class="main__page-container-popup-left">
+                    <img class="main__page-container-popup-image" src="/img/pic_1440.png">
+                </div>
+                <div class="main__page-container-popup-right">
+                    <div class="button__close">
+                        <img class="button__close-img" src="img/close.png">
+                    </div>
+                    <div class="main__page-container-popup-right-context">
+                        <div class="mp-container-popup-right-context-delivery">
+                            <p class="delivery__name">
+                                Доставка
+                            </p>
+                            <input class="delivery__textinput" type="text" placeholder="Ваше имя" name="name">
+                            <input class="delivery__textinput" type="text" placeholder="Телефон" name="phone">
+                            <div class="delivery__radiogroup">
+                                <label class="delivery__radio">
+                                    <input type="radio" name="type" value="pickup">Самовывоз
+                                </label>
+                                <label class="delivery__radio">
+                                    <input type="radio" name="type" value="delivery" checked>Доставка
+                                </label>
+                            </div>
+                            <div class="delivery__addres-block delivery__address-show">
+                                    <input class="delivery__textinput addres addres-flat" type="text" name="addres__street" placeholder="Улица, дом, квартира">
+                                <div class="delivery__textinput-addresblock">
+                                    <input class="delivery__textinput delivery__textinput-addres" type="text" name="addres__flat" placeholder="Этаж">
+                                    <input class="delivery__textinput delivery__textinput-addres" type="text" name="addres__domofon" placeholder="Домофон">
+                                </div>
+                            </div>
+                            <div class="delivery__button-submit">
+                                Оформить
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <section>
+            <div class="footer__container">
+                <div class="footer__container-logo">
+                    <img src="/img/logo_footer_1440.png">
+                </div>
+                <div class="footer__container-x">
+                    <div class="footer__container-phone">
+                        <div class="footer__container-phone-text">
+                            Номер для заказа
+                        </div>
+                        <div class="footer__container-phone-number">
+                            <img src="/img/footer-phone_320.png" class="footer__container-phone-number-img">
+                            <div class="footer__container-phone-number-text">
+                                +7(930)833-38-11
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer__container-media">
+                        <div class="footer__container-media-text">
+                            Мы в соцсетях
+                        </div>
+                        <div class="footer__container-media-img">
+                            <img src="/img/footer-media-vk_320.png" class="footer__container-media-img-vk">
+                            <img src="/img/footer-media-telegram_320.png" class="footer__container-media-img-telegram">
+                        </div>
+                    </div>
+                </div>
+
+            <div class="footer__container-info">
+                <div>
+                    © YouMeal, 2022
+                </div>
+                <div>
+                    Design: Anastasia Ilina
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+
+
+    
+    <script>
+        $(".main__page-container-button-order").on( "click", function() {
+            $(".main__page-container-background").addClass("main__page-container-background-show")
+        } );
+
+        $( ".button__close" ).on( "click", function() {
+            $(".main__page-container-background").removeClass("main__page-container-background-show")
+        } );
+
+        $('input[name="type"]').on('change', function() {
+            if ($(this).val() === 'delivery') {
+                $('.delivery__addres-block').addClass('delivery__address-show');
+            } else if (($(this).val() === 'pickup')){
+                $('.delivery__addres-block').removeClass('delivery__address-show');
+    }
+});
+
+
+    </script>
+
+</body>
+</html>
