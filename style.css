@@ -40,7 +40,7 @@ body{
 
 .fonmain {
     max-width: 100%;
-    background: url('/img/bg_1440.png');
+    background: url('img/bg_1440.png');
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: bottom center;
@@ -142,39 +142,39 @@ body{
 }
 
 .navigation-button-burger{
-    background-image: url('/img/icons/burger-icon.png');
+    background-image: url('img/icons/burger-icon.png');
 }
 
 .navigation-button-snack{
-    background-image: url('/img/icons/snack.png');
+    background-image: url('img/icons/snack.png');
 }
 
 .navigation-button-hotdog{
-    background-image: url('/img/icons/hotdog-icon.png');
+    background-image: url('img/icons/hotdog-icon.png');
 }
 
 .navigation-button-combo{
-    background-image: url('/img/icons/combo.png');
+    background-image: url('img/icons/combo.png');
 }
 
 .navigation-button-shawerma{
-    background-image: url('/img/icons/shawerma.png');
+    background-image: url('img/icons/shawerma.png');
 }
 
 .navigation-button-pizza{
-    background-image: url('/img/icons/pizza-icon.png');
+    background-image: url('img/icons/pizza-icon.png');
 }
 
 .navigation-button-wok{
-    background-image: url('/img/icons/wok.png');
+    background-image: url('img/icons/wok.png');
 }
 
 .navigation-button-desert{
-    background-image: url('/img/icons/desert.png');
+    background-image: url('img/icons/desert.png');
 }
 
 .navigation-button-souse{
-    background-image: url('/img/icons/souse-icon.png');
+    background-image: url('img/icons/souse-icon.png');
 }
 
 .main__container{
@@ -522,7 +522,7 @@ input[type="radio"] {
 
 @media(max-width: 1440px) {
     .fonmain {
-        background: url('/img/bg_1024.png');
+        background: url('img/bg_1024.png');
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: bottom center;
@@ -576,7 +576,7 @@ input[type="radio"] {
 
 @media(max-width: 1024px) {
     .fonmain {
-        background: url('/img/bg_768.png');
+        background: url('img/bg_768.png');
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: bottom center;
@@ -708,7 +708,7 @@ input[type="radio"] {
 
 @media(max-width: 768px) {
     .fonmain {
-        background: url('/img/bg.png');
+        background: url('img/bg.png');
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: bottom center;
